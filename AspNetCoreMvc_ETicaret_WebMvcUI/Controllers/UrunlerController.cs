@@ -49,7 +49,7 @@ namespace AspNetCoreMvc_ETicaret_WebMvcUI.Controllers
 
         public async Task<IActionResult> CreateComment(int Id, string Message)
         {
-            var user = await _accountService.Find(User.Identity.Name);
+            var user = await _accountService.Find(User.Identity.Name);//al
             CommentViewModel model = new()
             {
                 ProductId = Id,
